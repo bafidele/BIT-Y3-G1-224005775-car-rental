@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse the car rental fleet and check vehicle availability.">
+    <title>Browse Cars | Car Rental</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/js/html-browse.js" defer></script>
+</head>
+<body>
+    <video class="page-background-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+        <source src="assets/bg_car.mp4" type="video/mp4">
+    </video>
+
+    <nav aria-label="Main navigation">
+        <h1>ONLINE CAR RENTAL SYSTEM</h1>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="cars.html" aria-current="page">Cars (HTML page)</a></li>
+            <li><a href="browse.php">Booking page</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Create account</a></li>
+        </ul>
+    </nav>
+    <marquee class="welcome-marquee"><span class="marquee-text">WELCOME TO THE BEST CAR RENTING SERVICE PLATFORM</span></marquee>
+
+    <section class="site-hero" aria-label="Featured rental cars">
+        <div class="hero-gallery" aria-hidden="true">
+            <img src="uploads/benz.jpg" alt="">
+            <img src="uploads/civic.jpg" alt="">
+            <img src="uploads/rav4.jpg" alt="">
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+            <p class="hero-kicker">CAR RENTAL FLEET</p>
+            <h1>Find a car for your journey</h1>
+            <p>Search the cars and check availability before booking.</p>
+            <a href="browse.php" class="hero-link">Go to booking page</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="browse-page-title">Cars available for rent</h2>
+
+        <form class="vehicle-toolbar" id="html-vehicle-search" method="get" action="browse.php">
+            <label for="html-vehicle-query">Search cars</label>
+            <input id="html-vehicle-query" type="search" name="q" maxlength="80" placeholder="Model, type, or plate">
+
+            <label for="html-vehicle-status">Availability</label>
+            <select id="html-vehicle-status" name="status">
+                <option value="">All cars</option>
+                <option value="available">Available</option>
+                <option value="rented">Rented</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+
+            <button class="btn-blue" type="submit">Search</button>
+            <span class="vehicle-result-count" id="html-vehicle-count" aria-live="polite">Loading cars…</span>
+        </form>
+
+        <p class="sr-only" id="html-vehicle-status-message" role="status" aria-live="polite"></p>
+        <div class="car-grid" id="html-vehicle-grid" aria-live="polite">
+            <p class="empty-state">Cars are loading. Please wait.</p>
+        </div>
+
+        <noscript>
+            <p class="error">JavaScript is needed for live results. You can use the booking page to view the cars.</p>
+            <a class="button-link btn-blue" href="browse.php">Open booking page</a>
+        </noscript>
+    </main>
+
+    <footer class="site-footer">
+        <p>Need help? Call <a href="tel:+250789339641">0789 339 641</a> or <a href="tel:+250790175697">0790 175 697</a>.</p>
+        <p><a href="index.php">Home</a> · <a href="browse.php">Book a car</a> · <a href="login.php">Login</a></p>
+    </footer>
+</body>
+</html>
