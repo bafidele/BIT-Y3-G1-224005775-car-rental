@@ -1,4 +1,4 @@
--- Demonstration-only accounts and sample fleet for a fresh local database.
+--Demonstration-only accounts and sample fleet for a fresh local database.
 -- Admin must change the listed first-login password before accessing the site.
 USE car_rental_demo;
 
