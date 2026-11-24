@@ -1,5 +1,5 @@
--- Car Rental System schema for a fresh local database.
--- Keep staff accounts (users) separate from rental customers (customers).
+--Car Rental System schema for a fresh local database.
+--Keep staff accounts (users) separate from rental customers (customers).
 CREATE DATABASE IF NOT EXISTS car_rental_demo
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE car_rental_demo;
