@@ -1,6 +1,5 @@
 <?php
 declare(strict_types=1);
-
 // Load a local .env file without adding a framework or third-party dependency.
 $envFile = dirname(__DIR__) . '/.env';
 if (is_readable($envFile)) {
