@@ -16,4 +16,4 @@ The staff login accounts are stored in `users`. Customer accounts are stored sep
 The main models, controllers, services, and page views are in `src/`. The car search JSON endpoint is `api/vehicles.php`.
 
 ## VIDEO DEMO 3MINUTES LINK
-[VIDEO-DEMO LINK ]([url](https://github.com/bafidele/lBIT-Y3-G1-224005775-car-rental.git))
+[VIDEO-DEMO LINK ]([https://github.com/bafidele/lBIT-Y3-G1-224005775-car-rental.git](https://github.com/bafidele/lBIT-Y3-G1-224005775-car-rental.git))
