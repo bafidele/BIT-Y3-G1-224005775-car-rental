@@ -26,5 +26,3 @@ The additive password-reset table migration was also applied to the active `car_
 | Standalone HTML page and PHP API in browser | NOT RUN | `cars.html` now links the shared CSS and a JavaScript Fetch client to `api/vehicles.php`; run test case 27 in a browser and record the result. |
 
 The 23 database smoke assertions passed. The customer/admin HTTP rental flow used only the isolated demo database; test data was cleaned up and the sample administrator reset was restored. Remaining manual cases are listed explicitly rather than marked as passed.
-
-No check is marked as passed until it has been run and observed.
